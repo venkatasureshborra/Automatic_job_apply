@@ -9,9 +9,9 @@ import time
 ########  Note :  for every refresh this id are change it will only applied for the particular job       ############
 
 
-driver_path=Service("D:/Selenium_for_chrome/chromedriver_win32/chromedriver.exe")
+driver_path=Service("selenium location/path")
 driver=webdriver.Chrome(service=driver_path)
-driver.get("https://www.linkedin.com/jobs/search/?currentJobId=3574147931&f_AL=true&f_E=2&f_JT=F&f_TPR=r604800&keywords=python&refresh=true")
+driver.get("linkedin URL...........")
 driver.find_element(By.LINK_TEXT,"Sign in").click()
 time.sleep(5)
 username=driver.find_element(By.NAME,"session_key").send_keys("YOUR-USERNAME")
